@@ -1,0 +1,42 @@
+{
+  "name": "postcss-node-sass",
+  "version": "1.0.0",
+  "description": "A PostCSS plugin to parse styles with node-sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arpadHegedus/postcss-node-sass.git"
+  },
+  "keywords": [
+    "sass",
+    "postcss",
+    "node-sass",
+    "parse",
+    "plugin",
+    "scss"
+  ],
+  "author": {
+    "name": "Arpad Hegedus",
+    "email": "hegedus.arpad@gmail.com",
+    "web": "http://arpadhegedus.com"
+  },
+  "maintainers": [
+    {
+      "name": "Arpad Hegedus",
+      "email": "hegedus.arpad@gmail.com",
+      "web": "http://arpadhegedus.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arpadHegedus/postcss-node-sass/issues"
+  },
+  "homepage": "https://github.com/arpadHegedus/postcss-node-sass#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "postcss": "^6.0.6"
+  }
+}

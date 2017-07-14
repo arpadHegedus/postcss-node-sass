@@ -5,7 +5,7 @@ let postcss = require('postcss'),
 
 module.exports = postcss.plugin('styler', (opt = {}) => {
     return (root, result) => {
-        opt = Object.assign(opt, { file: root.toString() });
+        opt = Object.assign(opt, { data: root.toString() });
         result.root = postcss.parse(decoder.write(sass.renderSync(opt).css));
     }
 });

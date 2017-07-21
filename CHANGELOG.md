@@ -1,3 +1,6 @@
+# 1.1.2 - 2017-07-21
+* Changed dev dependencies to dependencies
+
 # 1.1.1 - 2017-07-14
 * Fixed issue with multiple plugins used at the same time
 

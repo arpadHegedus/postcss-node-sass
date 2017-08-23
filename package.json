@@ -1,6 +1,6 @@
 {
   "name": "postcss-node-sass",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "A PostCSS plugin to parse styles with node-sass",
   "main": "index.js",
   "scripts": {
@@ -37,6 +37,6 @@
   "homepage": "https://github.com/arpadHegedus/postcss-node-sass#readme",
   "dependencies": {
     "node-sass": "^4.5.3",
-    "postcss": "^6.0.6"
+    "postcss": "^6.0.9"
   }
 }

@@ -6,6 +6,15 @@ let postcss = require('postcss'),
 module.exports = postcss.plugin('styler', (opt = {}) => {
     return (root, result) => {
         opt = Object.assign(opt, { data: root.toString() });
-        result.root = postcss.parse(decoder.write(sass.renderSync(opt).css));
+        let theMap = opt.data;
+        try {
+            theMap = sass.renderSync(opt).css;
+        } catch (e) {
+            console.log('');
+            console.log('\x1b[33m%s\x1b[0m', 'POSTCSS-NODE-SASS ERROR');
+            console.warn(e.formatted);
+            console.log('');
+        }
+        result.root = postcss.parse(decoder.write(theMap));
     }
 });

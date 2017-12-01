@@ -1,3 +1,5 @@
+# PostCSS Node Sass [<img src="https://postcss.github.io/postcss/logo.svg" alt="PostCSS Logo" width="90" height="90" align="right">][PostCSS]
+
 A [PostCSS] plugin to parse styles with [node-sass]
 
 [PostCSS]: https://github.com/postcss/postcss

@@ -1,0 +1,5 @@
+@each $item in p a div {
+    '#{$item}' {
+        background: white;
+    }
+}

@@ -1,0 +1,6 @@
+@function addTen($number: 1px) {
+    @return $number + 10;
+}
+body {
+    padding: addTen(3px);
+}

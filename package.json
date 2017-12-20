@@ -1,43 +1,71 @@
 {
-  "name": "postcss-node-sass",
-  "version": "2.0.0",
-  "description": "A PostCSS plugin to parse styles with node-sass",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arpadHegedus/postcss-node-sass.git"
-  },
-  "keywords": [
-    "sass",
-    "postcss",
-    "node-sass",
-    "parse",
-    "plugin",
-    "scss"
-  ],
-  "author": {
-    "name": "Arpad Hegedus",
-    "email": "hegedus.arpad@gmail.com",
-    "web": "http://arpadhegedus.com"
-  },
-  "maintainers": [
-    {
-      "name": "Arpad Hegedus",
-      "email": "hegedus.arpad@gmail.com",
-      "web": "http://arpadhegedus.com"
+    "name": "postcss-node-sass",
+    "version": "2.1.0",
+    "description": "A PostCSS plugin to parse styles with node-sass",
+    "main": "index.js",
+    "license": "MIT",
+    "repository": "https://github.com/arpadHegedus/postcss-node-sass.git",
+    "homepage": "https://github.com/arpadHegedus/postcss-node-sass#readme",
+    "bugs": "https://github.com/arpadHegedus/postcss-node-sass/issues",
+    "keywords": [
+        "sass",
+        "postcss",
+        "postcss-plugin",
+        "node-sass",
+        "preprocessor",
+        "libsass",
+        "parse",
+        "plugin",
+        "scss",
+        "css",
+        "style"
+    ],
+    "author": {
+        "name": "Arpad Hegedus",
+        "email": "hegedus.arpad@gmail.com",
+        "web": "http://arpadhegedus.com"
+    },
+    "contributors": [
+        {
+            "name": "Arpad Hegedus",
+            "email": "hegedus.arpad@gmail.com",
+            "web": "http://arpadhegedus.com"
+        },
+        {
+            "name": "Jonathan Neal",
+            "email": "jonathantneal@hotmail.com",
+            "web": "https://jonathantneal.github.io"
+        }
+    ],
+    "maintainers": [
+        {
+            "name": "Arpad Hegedus",
+            "email": "hegedus.arpad@gmail.com",
+            "web": "http://arpadhegedus.com"
+        }
+    ],
+    "engines": {
+        "node": ">=4.0.0"
+    },
+    "scripts": {
+        "test": "jest"
+    },
+    "eslintConfig": {
+        "extends": "eslint-config-postcss/es5",
+        "env": {
+            "jest": true
+        }
+    },
+    "jest": {},
+    "dependencies": {
+        "merge-source-map": "^1.0.4",
+        "node-sass": "^4.7.2",
+        "postcss": "^6.0.14"
+    },
+    "devDependencies": {
+        "babel-eslint": "^8.0.3",
+        "eslint": "^4.13.1",
+        "eslint-config-postcss": "^2.0.2",
+        "jest": "^22.0.3"
     }
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/arpadHegedus/postcss-node-sass/issues"
-  },
-  "homepage": "https://github.com/arpadHegedus/postcss-node-sass#readme",
-  "dependencies": {
-    "merge-source-maps": "^0.5.0",
-    "node-sass": "^4.7.2",
-    "postcss": "^6.0.14"
-  }
 }

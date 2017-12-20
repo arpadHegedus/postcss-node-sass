@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.1.2 - 2017-12-20
+* Updated node dependency version
+
 ## 2.1.1 - 2017-12-20
 * Fixed ignore files
 

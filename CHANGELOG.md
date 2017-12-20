@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.1.4 - 2017-12-20
+* Updated readme
+
 ## 2.1.3 - 2017-12-20
 * Updated node dependencies for travis
 

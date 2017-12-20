@@ -1,6 +1,6 @@
 {
     "name": "postcss-node-sass",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "description": "A PostCSS plugin to parse styles with node-sass",
     "main": "index.js",
     "license": "MIT",

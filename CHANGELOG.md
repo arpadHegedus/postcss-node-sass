@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.1.1 - 2017-12-20
+* Fixed ignore files
+
 ## 2.1.0 - 2017-12-20
 * Fixed issues from 2.0.0
 * Added editor config

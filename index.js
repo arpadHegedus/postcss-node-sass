@@ -8,8 +8,9 @@ let postcss = require('postcss'),
     mergeSourceMap = require('merge-source-map');
 
 module.exports = postcss.plugin('postcss-node-sass', opt => (root, result) => {
+    const map = typeof result.opts.map === 'object' ? result.opts.map : {}
     let css = root.toResult(Object.assign(result.opts, {
-        map: { annotation: false, inline: false, sourcesContent: true }
+        map: Object.assign({ annotation: false, inline: false, sourcesContent: true }, map)
     }));
     opt = Object.assign({
         indentWidth: 4,

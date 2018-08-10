@@ -4,8 +4,7 @@
  */
 
 let postcss = require('postcss'),
-    sass = require('node-sass'),
-    mergeSourceMap = require('merge-source-map');
+    sass = require('node-sass');
 
 module.exports = postcss.plugin('postcss-node-sass', opt => (root, result) => {
     const map = typeof result.opts.map === 'object' ? result.opts.map : {}
@@ -29,7 +28,7 @@ module.exports = postcss.plugin('postcss-node-sass', opt => (root, result) => {
     )).then(res => postcss.parse(res.css.toString(), {
         from: result.opts.from,
         map: {
-            prev: mergeSourceMap(css.map.toJSON(), JSON.parse(css.map))
+            prev: JSON.parse(res.map.toString())
         }
     })).then(res => {
         result.root = res;

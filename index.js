@@ -7,9 +7,13 @@ let postcss = require('postcss'),
     sass = require('node-sass');
 
 module.exports = postcss.plugin('postcss-node-sass', opt => (root, result) => {
-    const map = typeof result.opts.map === 'object' ? result.opts.map : {}
+    let map = typeof result.opts.map === 'object' ? result.opts.map : {}
     let css = root.toResult(Object.assign(result.opts, {
-        map: Object.assign({ annotation: false, inline: false, sourcesContent: true }, map)
+        map: Object.assign({
+            annotation: false,
+            inline: false,
+            sourcesContent: true
+        }, map)
     }));
     opt = Object.assign({
         indentWidth: 4,

@@ -26,15 +26,21 @@ module.exports = postcss.plugin('postcss-node-sass', opt => (root, result) => {
         file: result.opts.from,
         outFile: result.opts.to
     });
+    let includedFiles
     return new Promise((resolve, reject) => sass.render(
         opt,
         (err, res) => err ? reject(err) : resolve(res)
-    )).then(res => postcss.parse(res.css.toString(), {
-        from: result.opts.from,
-        map: {
-            prev: JSON.parse(res.map.toString())
-        }
-    })).then(res => {
+    )).then(res => {
+        includedFiles = res.stats.includedFiles.filter((item, pos, array) => array.indexOf(item) === pos)
+        return postcss.parse(res.css.toString(), {
+            from: result.opts.from,
+            map: {
+                prev: JSON.parse(res.map.toString())
+            }
+        })
+    }).then(res => {
         result.root = res;
+        result.messages = includedFiles.map(file => ({ type: 'dependency', parent: result.opts.from, file }))
     });
+
 });

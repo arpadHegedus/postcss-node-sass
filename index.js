@@ -35,7 +35,7 @@ module.exports = postcss.plugin('postcss-node-sass', opt => (root, result) => {
         return postcss.parse(res.css.toString(), {
             from: result.opts.from,
             map: {
-                prev: JSON.parse(res.map.toString())
+                prev: res.map ? JSON.parse(res.map.toString()) : ''
             }
         })
     }).then(res => {

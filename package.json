@@ -1,6 +1,6 @@
 {
     "name": "postcss-node-sass",
-    "version": "2.1.7",
+    "version": "2.1.8",
     "description": "A PostCSS plugin to parse styles with node-sass",
     "main": "index.js",
     "license": "MIT",
@@ -60,14 +60,14 @@
         "testURL": "http://localhost"
     },
     "dependencies": {
-        "merge-source-map": "^1.0.4",
-        "node-sass": "^4.7.2",
-        "postcss": "^6.0.14"
+        "merge-source-map": "^1.1.0",
+        "node-sass": "^4.10.0",
+        "postcss": "^7.0.6"
     },
     "devDependencies": {
-        "babel-eslint": "^8.0.3",
-        "eslint": "^4.13.1",
-        "eslint-config-postcss": "^2.0.2",
-        "jest": "^22.0.3"
+        "babel-eslint": "^10.0.1",
+        "eslint": "^5.9.0",
+        "eslint-config-postcss": "^3.0.6",
+        "jest": "^23.6.0"
     }
 }

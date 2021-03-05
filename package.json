@@ -45,7 +45,7 @@
         }
     ],
     "engines": {
-        "node": ">=6.0.0"
+        "node": ">=6.0.0 <15.0.0"
     },
     "scripts": {
         "test": "jest"
@@ -61,14 +61,14 @@
     },
     "dependencies": {
         "merge-source-map": "^1.1.0",
-        "node-sass": "^4.14.1",
-        "postcss": "^8.2.7"
+        "node-sass": "^4.14.1"
     },
     "devDependencies": {
         "babel-eslint": "^10.0.1",
         "eslint": "^5.9.0",
         "eslint-config-postcss": "^3.0.6",
-        "jest": "^23.6.0"
+        "jest": "^23.6.0",
+        "postcss": "^8.2.7"
     },
     "peerDependencies": {
         "postcss": "^8.x.x"

@@ -3,8 +3,10 @@ language: node_js
 cache: yarn
 
 node_js:
-  - stable
-  - "6"
+  # run based on all LTS builds
+  - 14
+  - 12
+  - 10
 
 install:
   - npm install

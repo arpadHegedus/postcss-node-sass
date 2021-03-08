@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.0.0 - 2021-03-07
+Breaking changes:
+* Drop support for Node < 10.
+* Upgrading Postcss to version 8.
+* Postcss is not a peer dependency so now required to install in project.
+
 ## 2.1.4 - 2017-12-20
 * Updated readme
 

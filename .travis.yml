@@ -4,6 +4,9 @@ cache: yarn
 
 node_js:
   # run based on all LTS builds
+  - 22
+  - 20
+  - 18
   - 16
   - 14
   - 12
